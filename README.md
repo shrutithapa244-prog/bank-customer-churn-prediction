@@ -71,22 +71,22 @@ Target Variable:
 Bank Churn Project/
 
 ├── App/
-│   └── app.py
+    -> app.py
 
 ├── Data/
-│   └── Churn_Modelling.csv
+    -> Churn_Modelling.csv
 
 ├── Model/
-│   ├── churn_model.pkl
-│   └── scaler.pkl
+    -> churn_model.pkl
+    -> scaler.pkl
 
 ├── Notebooks/
-│   └── churn_analysis.ipynb
+    -> churn_analysis.ipynb
 
 ├── Screenshots/
-│   ├── PowerBI_Overview.png
-│   ├── PowerBI_Insights.png
-│   └── Streamlit_App.png
+    -> PowerBI_Overview.png
+    -> PowerBI_Insights.png
+    -> Streamlit_App.png
 
 └── README.md
 
