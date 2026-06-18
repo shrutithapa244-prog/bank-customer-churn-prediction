@@ -1,9 +1,15 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import os
 
-model = pickle.load(open('../Model/churn_model.pkl', 'rb'))
-scaler = pickle.load(open('../Model/scaler.pkl', 'rb'))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+model_path = os.path.join(BASE_DIR, "Model", "churn_model.pkl")
+scaler_path = os.path.join(BASE_DIR, "Model", "scaler.pkl")
+
+model = pickle.load(open(model_path, "rb"))
+scaler = pickle.load(open(scaler_path, "rb"))
 
 st.title("Bank Customer Churn Prediction System")
 st.markdown(
